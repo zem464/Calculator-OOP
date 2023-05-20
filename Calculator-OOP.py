@@ -16,22 +16,30 @@ num = input("\033[34m\033[1mHow many numbers will you input?: \033[37m\033[0m")
 # Use exception handling
 try:
     # For 2 inputs
+    if num == '2':
+            # Show operations
+            print("\nIn selecting operations, pick a number.")
+            print("1. +")
+            print("2. -")
+            print("3. *")
+            print("4. /")
 
-        # Use while loop
+            # Use while loop
+            while True:
+                # Take operation to be used
+                operations = input("\nOperation: ")
 
-        # Take operation to be used
+                # Check input
 
-        # Check input
+                # If addition
 
-        # If addition
+                # If subtraction
 
-        # If subtraction
+                # If multiplication
 
-        # If multiplication
+                # If division
 
-        # If division
-
-        # Ask for more calculations
+                # Ask for more calculations
 
     # For 3 inputs
 
