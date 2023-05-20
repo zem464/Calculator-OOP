@@ -1,6 +1,8 @@
 # Import the class
+from Calcu_Class import calculator
 
 # Create the object
+calculate = calculator()
 
 # Print the intro or greetings
 
