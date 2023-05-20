@@ -198,5 +198,9 @@ try:
                 print("Thank you!")
                 break
 
+            # If input is invalid
+            else:
+                print("Invalid input.")
+
 except ValueError:
     print("You can only put integers.")
