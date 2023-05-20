@@ -1,22 +1,18 @@
 # Create class method
 class calculator:
-    # Create constructor method for the inputs
-    def __init__(self, num1, num2):
-        self.num1 = inp_num1
-        self.num2 = inp_num2
 
     # Create instance method for addition
-    def add(self):
+    def add(self, num1, num2):
         return num1 + num2
 
     # Create instance method for subtraction
-    def subtract(self):
+    def subtract(self, num1, num2):
         return num1 - num2
 
     # Create instance method for multiplication
-    def multiply(self):
+    def multiply(self, num1, num2):
         return num1 * num2
 
     # Create instance method for division
-    def divide(self):
+    def divide(self, num1, num2):
         return num1 / num2
