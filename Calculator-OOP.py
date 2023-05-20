@@ -5,6 +5,9 @@ from Calcu_Class import calculator
 calculate = calculator()
 
 # Print the intro or greetings
+print("==========================================================================")
+print("|\033[37;40m                          " + "\033[35;40m\033[1mSIMPLE CALCULATOR\033[0m" + "\033[37;40m                             \033[37m|")
+print("==========================================================================" + "\n")
 
 # Ask how many numbers are to be calculated
 
