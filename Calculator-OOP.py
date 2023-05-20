@@ -95,9 +95,16 @@ try:
             # Take the operations to be used by the users
             operations = input("\nOperation: ")
 
-            # Take operation to be used
-
             # Check input
+            if operations in ('5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'):
+                # use try-except handling
+                try:
+                    inp_num1 = float(input("Enter number: "))
+                    inp_num2 = float(input("Enter another number: "))
+                    inp_num3 = float(input("Enter another number: "))
+                except ValueError:
+                    print("Invalid input. Please enter numbers.")
+                    continue
 
             # If addition
 
