@@ -106,13 +106,90 @@ try:
                     print("Invalid input. Please enter numbers.")
                     continue
 
-            # If addition
+            # If both addition
+            if operations == '5':
+                print(inp_num1, "+", inp_num2, "+", inp_num3, "=", calculate.add(inp_num1, inp_num2) + inp_num3)
+            
+            # If addition and subtraction
+            elif operations == '6':
+                print(inp_num1, "+", inp_num2, "-", inp_num3, "=", calculate.add(inp_num1, inp_num2) - inp_num3)
 
-            # If subtraction
+            # If addition and multiplication
+            elif operations == '7':
+                print(inp_num1, "+", inp_num2, "*", inp_num3, "=", calculate.add(inp_num1, inp_num2) * inp_num3)
 
-            # If multiplication
+            # If addition and division
+            elif operations == '8':
+                try:
+                    print(inp_num1, "+", inp_num2, "/", inp_num3, "=", calculate.add(inp_num1, inp_num2) / inp_num3)
+                except ZeroDivisionError:
+                    print("Cannot divide by zero")
+            
+            # If subtraction and addition
+            elif operations == '9':
+                print(inp_num1, "-", inp_num2, "+", inp_num3, "=", calculate.subtract(inp_num1, inp_num2) + inp_num3)
+            
+            # If both subtraction
+            elif operations == '10':
+                print(inp_num1, "-", inp_num2, "-", inp_num3, "=", calculate.subtract(inp_num1, inp_num2) - inp_num3)
 
-            # If division
+            # If subtraction and multiplication
+            elif operations == '11':
+                print(inp_num1, "-", inp_num2, "*", inp_num3, "=", calculate.subtract(inp_num1, inp_num2) * inp_num3)
+
+            # If subtraction and division
+            elif operations == '12':
+                try:
+                    print(inp_num1, "-", inp_num2, "/", inp_num3, "=", calculate.subtract(inp_num1, inp_num2) / inp_num3)
+                except ZeroDivisionError:
+                    print("Cannot divide by zero")
+            
+            # If multiplication and addition
+            elif operations == '13':
+                print(inp_num1, "*", inp_num2, "+", inp_num3, "=", calculate.multiply(inp_num1, inp_num2) + inp_num3)
+            
+            # If multiplication and subtraction
+            elif operations == '14':
+                print(inp_num1, "*", inp_num2, "-", inp_num3, "=", calculate.multiply(inp_num1, inp_num2) - inp_num3)
+
+            # If both multiplication
+            elif operations == '15':
+                print(inp_num1, "*", inp_num2, "*", inp_num3, "=", calculate.multiply(inp_num1, inp_num2) * inp_num3)
+
+            # If multiplication and division
+            elif operations == '16':
+                try:
+                    print(inp_num1, "*", inp_num2, "/", inp_num3, "=", calculate.multiply(inp_num1, inp_num2) / inp_num3)
+                except ZeroDivisionError:
+                    print("Cannot divide by zero")
+
+            # If division and addition
+            elif operations == '17':
+                try:
+                    print(inp_num1, "/", inp_num2, "+", inp_num3, "=", calculate.divide(inp_num1, inp_num2) + inp_num3)
+                except ZeroDivisionError:
+                    print("Cannot divide by zero")
+
+            # If division and subtraction
+            elif operations == '18':
+                try:
+                    print(inp_num1, "/", inp_num2, "-", inp_num3, "=", calculate.divide(inp_num1, inp_num2) - inp_num3)
+                except ZeroDivisionError:
+                    print("Cannot divide by zero")
+
+            # If division and multiplication
+            elif operations == '19':
+                try:
+                    print(inp_num1, "/", inp_num2, "*", inp_num3, "=", calculate.divide(inp_num1, inp_num2) * inp_num3)
+                except ZeroDivisionError:
+                    print("Cannot divide by zero")
+
+            # If both division
+            elif operations == '20':
+                try:
+                    print(inp_num1, "/", inp_num2, "/", inp_num3, "=", calculate.divide(inp_num1, inp_num2) / inp_num3)
+                except ZeroDivisionError:
+                    print("Cannot divide by zero")
 
             # Ask for more calculations
 
