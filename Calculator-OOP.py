@@ -68,24 +68,46 @@ try:
             # If input is invalid
             else:
                 print("Invalid input.")
-                
+
     # For 3 inputs
+    elif num == '3':
+        # Show operations
+        print("\nIn selecting operations, pick a number.")
+        print("5. +, +")
+        print("6. +, -")
+        print("7. +, *")
+        print("8. +, /")
+        print("9. -, +")
+        print("10. -, -")
+        print("11. -, *")
+        print("12. -, /")
+        print("13. *, +")
+        print("14. *, -")
+        print("15. *, *")
+        print("16. *, /")
+        print("17. /, +")
+        print("18. /, -")
+        print("19. /, *")
+        print("20. /, /")
 
         # Use while loop
+        while True:
+            # Take the operations to be used by the users
+            operations = input("\nOperation: ")
 
-        # Take operation to be used
+            # Take operation to be used
 
-        # Check input
+            # Check input
 
-        # If addition
+            # If addition
 
-        # If subtraction
+            # If subtraction
 
-        # If multiplication
+            # If multiplication
 
-        # If division
+            # If division
 
-        # Ask for more calculations
+            # Ask for more calculations
 
 except ValueError:
     print("You can only put integers.")
