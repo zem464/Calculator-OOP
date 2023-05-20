@@ -192,6 +192,11 @@ try:
                     print("Cannot divide by zero")
 
             # Ask for more calculations
+            again = input("More calculations? Put 'n' if none: ")
+                # Break if no other calculations
+            if again.lower() == 'n':
+                print("Thank you!")
+                break
 
 except ValueError:
     print("You can only put integers.")
