@@ -14,7 +14,7 @@ print("\033[33m**Note that this calculator can only except at least 3 inputs.\n"
 num = input("\033[34m\033[1mHow many numbers will you input?: \033[37m\033[0m")
 
 # Use exception handling
-
+try:
     # For 2 inputs
 
         # Use while loop
@@ -50,3 +50,6 @@ num = input("\033[34m\033[1mHow many numbers will you input?: \033[37m\033[0m")
         # If division
 
         # Ask for more calculations
+
+except ValueError:
+    print("You can only put integers.")
