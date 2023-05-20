@@ -64,7 +64,11 @@ try:
                 if again.lower() == 'n':
                     print("Thank you!")
                     break
-
+            
+            # If input is invalid
+            else:
+                print("Invalid input.")
+                
     # For 3 inputs
 
         # Use while loop
