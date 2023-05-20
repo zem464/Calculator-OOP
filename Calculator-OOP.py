@@ -40,13 +40,24 @@ try:
                         continue
 
                 # If addition
-
+                if operations == '1':
+                        print(inp_num1, "+", inp_num2, "=", calculate.add(inp_num1, inp_num2))
+                    
                 # If subtraction
+                elif operations == '2':
+                        print(inp_num1, "-", inp_num2, "=", calculate.subtract(inp_num1, inp_num2))
 
                 # If multiplication
+                elif operations == '3':
+                        print(inp_num1, "*", inp_num2, "=", calculate.multiply(inp_num1, inp_num2))
 
                 # If division
-
+                elif operations == '4':
+                        try:
+                            print(inp_num1, "/", inp_num2, "=", calculate.divide(inp_num1, inp_num2))
+                        except ZeroDivisionError:
+                            print("Cannot divide by zero")
+                    
                 # Ask for more calculations
 
     # For 3 inputs
