@@ -59,6 +59,11 @@ try:
                             print("Cannot divide by zero")
                     
                 # Ask for more calculations
+                again = input("More calculations? Put 'n' if none: ")
+                    # Continue if there are more calculations
+                if again.lower() == 'n':
+                    print("Thank you!")
+                    break
 
     # For 3 inputs
 
