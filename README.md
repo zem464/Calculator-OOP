@@ -11,31 +11,47 @@
 
 Create a simple calculator using the following:
 
-        1. The application will ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication and Division)
+        1. In a file, create a class for the calculator.
+        
+        2. The application will ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication and Division)
 
-        2. The application will ask the user for two numbers
+        3. The application will ask the user for two numbers
 
-        3. Display the result
+        4. Display the result
 
-        4. The application will ask if the user wants to try again or not.
+        5. The application will ask if the user wants to try again or not.
 
-        5. If yes, repeat Step 1.
+        6. If yes, repeat Step 1.
 
-        6. If no, Display “Thank you!” and the program will exit 
+        7. If no, Display “Thank you!” and the program will exit 
 
-        7. Use Python Function and appropriate Exceptions to capture errors during runtime.
+        8. Use Python Function and appropriate Exceptions to capture errors during runtime.
 
 
 ## About the Program
 **STEPS**
 
-1. 
+1. Create a python file that will contain the class to be used for the calculator.
 
-2. 
+2. Create instance methods for the operations.
 
-3. 
+3. Create another python file that will contain the procedures for the calculator.
 
-4. 
+4. Import the class from another file to the latter file.
+
+5. Create an object for the procedure to use the class.
+
+6. Ask for how many integers are to be input.
+
+7. Show the possible operations for the corresponding input and ask for the operation to be used.
+
+8. Use a while loop if there are more use of the calculator.
+
+9. Ask for the integers to be calculated.
+
+10. Check the input for operations and equate it to the equivalent operation with the use of the object and the instances in the class.
+
+11. Print the answer.
 
 ## Running the Program
 
