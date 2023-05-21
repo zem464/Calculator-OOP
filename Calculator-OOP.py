@@ -196,9 +196,9 @@ elif num == '3':
             print("\n\033[35m\033[1mThank you!")
             break
 
-        # If input is invalid
-        else:
-            print("\033[31m\033[1mInvalid input.")
+    # If input is invalid
+    else:
+        print("\033[31m\033[1mInvalid input.")
 
 # Give choices, if input is not in the choices
 else:
