@@ -16,7 +16,7 @@ class UserInterface:
     def operations_display(self):
         # Show operations
         print("\n\033[33;40m\033[1mIn selecting operations, pick a number.\033[0m")
-        print("1. +\n 2. - \n 3. * \n 4. / \n")
+        print("1. +\n2. -\n3. *\n4. /")
     
     def operations_ask(self):
         # Take operation to be used
@@ -26,15 +26,31 @@ class UserInterface:
     def input_num(self):
         try:
             inp_num = float(input("\033[34m\033[1mEnter number: \033[37m\033[0m"))
+            return inp_num
         except ValueError:
             print("\033[31m\033[1mInvalid input. Please enter numbers.")
-            return inp_num
+            return self.input_num()
+    
+    def print_sum(self, sum):
+        print("=", str(sum))
+
+    def print_subtract(self, difference):
+        print("=", str(difference))
+
+    def print_multiply(self, product):
+        print("=", str(product))
+
+    def print_divide(self, quotient):
+        try: 
+            print("=", str(quotient)) 
+        except ZeroDivisionError:
+                print("\033[31m\033[1mCannot divide by zero")
     
     def ask_again(self):
-        again = input("More calculations? Put 'n' if none: \n")
-        if again.lower() == 'n':
-            print("\n\033[35m\033[1mThank you!")
-            return False
+        again = input("More calculations? Put 'n' if none: \n".lower())
+    
+    def no_more(self):
+        print("\n\033[35m\033[1mThank you!")
     
     def not_operation(self):
         print("\033[31m\033[1mInvalid input.")
