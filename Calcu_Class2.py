@@ -2,7 +2,7 @@
 from Calcu_Class import calculator
 
 # Create the class method
-class more_ope:
+class more_ope(calculator):
     def add_add(self, inp_num1, inp_num2, inp_num3):
         add_add = inp_num1 + inp_num2 + inp_num3
         return add_add
