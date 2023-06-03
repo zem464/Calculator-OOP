@@ -53,10 +53,14 @@ if num == '2':
                         ui.for_ZeroDiv()
 
                 # Ask for more calculations
-                ask = ui.ask_again()
-                if ask == 'n':
+                asking = ui.ask_again()
+                if asking == True:
                     ui.no_more()
-                break
+                    break
+            
+            # If not in the operation choices
+            else:
+                ui.not_an_option()
         
         # If input is invalid
         else:
@@ -181,12 +185,14 @@ elif num == '3':
                     ui.for_ZeroDiv()
 
             # Ask for more calculations
-            again = ui.ask_again()
-                # Break if no other calculations
-            if again != 'n':
-                ui.ask_again()
-            else: 
+            asking = ui.ask_again()
+            if asking == True:
                 ui.no_more()
+                break
+            
+        # If not in the operation choices
+        else:
+            ui.not_an_option2()
 
     # If input is invalid
     else:

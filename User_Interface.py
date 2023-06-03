@@ -18,6 +18,9 @@ class UserInterface:
         print("\n\033[33;40m\033[1mIn selecting operations, pick a number.\033[0m")
         print("1. +\n2. -\n3. *\n4. /")
     
+    def operations_list(self, options):
+        options = ['1', '2', '3', '4']
+    
     def operations_ask(self):
         # Take operation to be used
         operations = input("\n\033[34m\033[1mOperation: \033[37m\033[0m")
@@ -47,10 +50,18 @@ class UserInterface:
         print("\033[31m\033[1mCannot divide by zero")
     
     def ask_again(self):
-        input("More calculations? Put 'n' if none: \n".lower())
+        again = input("\n\033[32m\033[1mMore calculations? Put 'n' if none: \033[37m\033[0m")
+        if again.lower() == 'n':
+            return True
     
     def no_more(self):
         print("\n\033[35m\033[1mThank you!")
+    
+    def not_an_option(self):
+        print("\033[31m\033[1mPick only from 1 to 4")
+    
+    def not_an_option2(self):
+        print("\033[31m\033[1mPick only from 5 to 20")
     
     def not_operation(self):
         print("\033[31m\033[1mInvalid input.")
