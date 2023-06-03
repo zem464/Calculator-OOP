@@ -47,11 +47,10 @@ class UserInterface:
         print("\033[31m\033[1mCannot divide by zero")
     
     def ask_again(self):
-        again = input("More calculations? Put 'n' if none: \n".lower())
+        input("More calculations? Put 'n' if none: \n".lower())
     
     def no_more(self):
-        no_more = print("\n\033[35m\033[1mThank you!")
-        return no_more
+        print("\n\033[35m\033[1mThank you!")
     
     def not_operation(self):
         print("\033[31m\033[1mInvalid input.")
@@ -62,3 +61,9 @@ class UserInterface:
         print("5. +, +\n6. +, -\n7. +, *\n8. +, /\n9. -, +\n10. -, -")
         print("11. -, *\n12. -, /\n13. *, +\n14. *, -\n15. *, *\n16. *, /")
         print("17. /, +\n18. /, -\n19. /, *\n20. /, /")
+
+    def not_inputsNum(self):
+        print("\033[31m\033[1mPlease enter 2 or 3 only.")
+
+    def print_add_add(self, add_add):
+        print("=", str(add_add))
