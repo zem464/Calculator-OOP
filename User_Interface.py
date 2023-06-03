@@ -13,7 +13,7 @@ class UserInterface:
         num = input("\033[34m\033[1mHow many numbers will you input?: \033[37m\033[0m")
         return num
     
-    def operations_display(self):
+    def operations_display_for2(self):
         # Show operations
         print("\n\033[33;40m\033[1mIn selecting operations, pick a number.\033[0m")
         print("1. +\n2. -\n3. *\n4. /")
@@ -41,16 +41,24 @@ class UserInterface:
         print("=", str(product))
 
     def print_divide(self, quotient):
-        try: 
-            print("=", str(quotient)) 
-        except ZeroDivisionError:
-                print("\033[31m\033[1mCannot divide by zero")
+        print("=", str(quotient))
+    
+    def for_ZeroDiv(self):
+        print("\033[31m\033[1mCannot divide by zero")
     
     def ask_again(self):
         again = input("More calculations? Put 'n' if none: \n".lower())
     
     def no_more(self):
-        print("\n\033[35m\033[1mThank you!")
+        no_more = print("\n\033[35m\033[1mThank you!")
+        return no_more
     
     def not_operation(self):
         print("\033[31m\033[1mInvalid input.")
+    
+    def operations_display_for3(self):
+        # Show operations
+        print("\n\033[33;40m\033[1mIn selecting operations, pick a number.\033[0m")
+        print("5. +, +\n6. +, -\n7. +, *\n8. +, /\n9. -, +\n10. -, -")
+        print("11. -, *\n12. -, /\n13. *, +\n14. *, -\n15. *, *\n16. *, /")
+        print("17. /, +\n18. /, -\n19. /, *\n20. /, /")
