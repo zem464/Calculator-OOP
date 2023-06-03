@@ -31,15 +31,17 @@ Create a simple calculator using the following:
 ## About the Program
 **STEPS**
 
-1. Create a python file that will contain the class to be used for the calculator.
+1. Create separate python files that will contain the parent class, child class, user interface, interface for 2-inputs, interface for 3-inputs, and the main file that will call the methods from the files created.
 
-2. Create instance methods for the operations.
+**Note: The separate interfaces are optional.
 
-3. Create another python file that will contain the procedures for the calculator.
+2. Create classes for the operations and interfaces according to your likings of organization.
 
-4. Import the class from another file to the latter file.
+3. Import the other files on the python file that will contain the procedures for the calculator.
 
-5. Create an object for the procedure to use the class.
+4. Create the objects for the procedure to use the class in accordance to the classes and their functions.
+
+5. Display the greetings of your own. (Optional)
 
 6. Ask for how many integers are to be input.
 
