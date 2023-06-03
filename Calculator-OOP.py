@@ -1,7 +1,9 @@
 # Import the class
+from User_Interface import UserInterface
 from Calcu_Class import calculator
 
 # Create the object
+ui = UserInterface()
 calculate = calculator()
 
 # Print the intro or greetings
