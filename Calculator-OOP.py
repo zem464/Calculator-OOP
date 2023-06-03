@@ -86,97 +86,97 @@ elif num == '3':
             
             # If addition and subtraction
             elif operations == '6':
-                difference = calculate.add(inp_num1, inp_num2) - inp_num3
-                ui.print_subtract(difference)
+                add_sub = calc.add_sub(inp_num1, inp_num2, inp_num3)
+                ui.print_add_sub(add_sub)
 
             # If addition and multiplication
             elif operations == '7':
-                product = calculate.add(inp_num1, inp_num2) * inp_num3
-                ui.print_multiply(product)
+                add_multi = calc.add_multi(inp_num1, inp_num2, inp_num3)
+                ui.print_add_multi(add_multi)
 
             # If addition and division
             elif operations == '8':
                 try:
-                    quotient = calculate.add(inp_num1, inp_num2) / inp_num3
-                    ui.print_divide(quotient)
+                    add_div = calc.add_div(inp_num1, inp_num2, inp_num3)
+                    ui.print_add_div(add_div)
                 except ZeroDivisionError:
                     ui.for_ZeroDiv()
             
             # If subtraction and addition
             elif operations == '9':
-                sum = calculate.subtract(inp_num1, inp_num2) + inp_num3
-                ui.print_sum(sum)
+                sub_add = calc.sub_add(inp_num1, inp_num2, inp_num3)
+                ui.print_sub_add(sub_add)
 
             # If both subtraction
             elif operations == '10':
-                difference = calculate.subtract(inp_num1, inp_num2) - inp_num3
-                ui.print_subtract(difference)
+                sub_sub = calc.sub_sub(inp_num1, inp_num2, inp_num3)
+                ui.print_sub_sub(sub_sub)
                 
             # If subtraction and multiplication
             elif operations == '11':
-                product = calculate.subtract(inp_num1, inp_num2) * inp_num3
-                ui.print_multiply(product)
+                sub_multi = calc.sub_multi(inp_num1, inp_num2, inp_num3)
+                ui.print_sub_multi(sub_multi)
 
             # If subtraction and division
             elif operations == '12':
                 try:
-                    quotient = calculate.subtract(inp_num1, inp_num2) / inp_num3
-                    ui.print_divide(quotient)
+                    sub_div = calc.sub_div(inp_num1, inp_num2, inp_num3)
+                    ui.print_sub_div(sub_div)
                 except ZeroDivisionError:
                     ui.for_ZeroDiv()
             
             # If multiplication and addition
             elif operations == '13':
-                sum = calculate.multiply(inp_num1, inp_num2) + inp_num3
-                ui.print_multiply(sum)
+                multi_add = calc.multi_add(inp_num1, inp_num2, inp_num3)
+                ui.print_multi_add(multi_add)
 
             # If multiplication and subtraction
             elif operations == '14':
-                difference = calculate.multiply(inp_num1, inp_num2) - inp_num3
-                ui.print_multiply(difference)
+                multi_sub = calc.multi_sub(inp_num1, inp_num2, inp_num3)
+                ui.print_multi_sub(multi_sub)
 
             # If both multiplication
             elif operations == '15':
-                product = calculate.multiply(inp_num1, inp_num2) * inp_num3
-                ui.print_multiply(product)
+                multi_multi = calc.multi_multi(inp_num1, inp_num2, inp_num3)
+                ui.print_multi_multi(multi_multi)
 
             # If multiplication and division
             elif operations == '16':
                 try:
-                    quotient = calculate.multiply(inp_num1, inp_num2) / inp_num3
-                    ui.print_divide(quotient)
+                    multi_div = calc.multi_div(inp_num1, inp_num2, inp_num3)
+                    ui.print_multi_div(multi_div)
                 except ZeroDivisionError:
                     ui.for_ZeroDiv()
 
             # If division and addition
             elif operations == '17':
                 try:
-                    sum = calculate.divide(inp_num1, inp_num2) + inp_num3
-                    ui.print_divide(sum)
+                    div_add = calc.div_add(inp_num1, inp_num2, inp_num3)
+                    ui.print_div_add(div_add)
                 except ZeroDivisionError:
                     ui.for_ZeroDiv()
 
             # If division and subtraction
             elif operations == '18':
                 try:
-                    difference = calculate.divide(inp_num1, inp_num2) - inp_num3
-                    ui.print_divide(difference)
+                    div_sub = calc.div_sub(inp_num1, inp_num2, inp_num3)
+                    ui.print_div_sub(div_sub)
                 except ZeroDivisionError:
                     ui.for_ZeroDiv()
 
             # If division and multiplication
             elif operations == '19':
                 try:
-                    product = calculate.divide(inp_num1, inp_num2) * inp_num3
-                    ui.print_divide(product)
+                    div_multi = calc.div_multi(inp_num1, inp_num2, inp_num3)
+                    ui.print_div_multi(div_multi)
                 except ZeroDivisionError:
                     ui.for_ZeroDiv()
 
             # If both division
             elif operations == '20':
                 try:
-                    quotient = calculate.divide(inp_num1, inp_num2) / inp_num3
-                    ui.print_divide(quotient)
+                    div_div = calc.div_div(inp_num1, inp_num2, inp_num3)
+                    ui.print_div_div(div_div)
                 except ZeroDivisionError:
                     ui.for_ZeroDiv()
 
