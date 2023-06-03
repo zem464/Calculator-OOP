@@ -12,15 +12,7 @@ class UserInterface:
         print("\033[33m**Note that this calculator can only except no more than 3 inputs.\n")
         num = input("\033[34m\033[1mHow many numbers will you input?: \033[37m\033[0m")
         return num
-    
-    def operations_display_for2(self):
-        # Show operations
-        print("\n\033[33;40m\033[1mIn selecting operations, pick a number.\033[0m")
-        print("1. +\n2. -\n3. *\n4. /")
-    
-    def operations_list(self, options):
-        options = ['1', '2', '3', '4']
-    
+
     def operations_ask(self):
         # Take operation to be used
         operations = input("\n\033[34m\033[1mOperation: \033[37m\033[0m")
@@ -34,18 +26,6 @@ class UserInterface:
             print("\033[31m\033[1mInvalid input. Please enter numbers.")
             return self.input_num()
     
-    def print_sum(self, sum):
-        print("=", str(sum))
-
-    def print_subtract(self, difference):
-        print("=", str(difference))
-
-    def print_multiply(self, product):
-        print("=", str(product))
-
-    def print_divide(self, quotient):
-        print("=", str(quotient))
-    
     def for_ZeroDiv(self):
         print("\033[31m\033[1mCannot divide by zero")
     
@@ -56,9 +36,6 @@ class UserInterface:
     
     def no_more(self):
         print("\n\033[35m\033[1mThank you!")
-    
-    def not_an_option(self):
-        print("\033[31m\033[1mPick only from 1 to 4")
     
     def not_an_option2(self):
         print("\033[31m\033[1mPick only from 5 to 20")

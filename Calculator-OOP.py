@@ -1,10 +1,12 @@
 # Import the class
 from User_Interface import UserInterface
+from InputInterface2 import input2
 from Calcu_Class import calculator
 from Calcu_Class2 import more_ope
 
 # Create the object
 ui = UserInterface()
+ii2 = input2()
 calculate = calculator()
 calc = more_ope()
 
@@ -17,7 +19,7 @@ num = ui.ask_inputsNum()
 # For 2 inputs
 if num == '2':
         # Show operations
-        ui.operations_display_for2()
+        ii2.operations_display_for2()
 
         # Use while loop
         while True:
@@ -32,23 +34,23 @@ if num == '2':
                 # If addition
                 if operations == '1':
                     sum = calculate.add(inp_num1, inp_num2)
-                    ui.print_sum(sum)
+                    ii2.print_sum(sum)
                     
                 # If subtraction
                 elif operations == '2':
                     difference = calculate.subtract(inp_num1, inp_num2)
-                    ui.print_subtract(difference)
+                    ii2.print_subtract(difference)
 
                 # If multiplication
                 elif operations == '3':
                     product = calculate.multiply(inp_num1, inp_num2)
-                    ui.print_multiply(product)
+                    ii2.print_multiply(product)
 
                 # If division
                 elif operations == '4':
                     try:
                         quotient = calculate.divide(inp_num1, inp_num2)
-                        ui.print_divide(quotient)
+                        ii2.print_divide(quotient)
                     except ZeroDivisionError:
                         ui.for_ZeroDiv()
 
@@ -60,7 +62,7 @@ if num == '2':
             
             # If not in the operation choices
             else:
-                ui.not_an_option()
+                ii2.not_an_option()
         
         # If input is invalid
         else:
