@@ -1,11 +1,3 @@
-# Calculator-OOP
-
-**Built for :** Subject assignment for Object Oriented Programming.
-
-  **Submitted to :** Prof. Danilo Madrigalejos 
-  
-  **A.Y :** 2022-2023
-
 ## About the Project
 **RE-CALCULATOR_OOP**
 
@@ -27,6 +19,11 @@ Create a simple calculator using the following:
 
         8. Use Python Function and appropriate Exceptions to capture errors during runtime.
 
+## Project Evolution: Procedural vs. Object-Oriented
+
+This repository showcases the evolution of a single application across two distinct programming paradigms. The **Simple Version** (found in the `Simple Calculator Repo` in the `Simple-Ver` branch) utilizes a procedural approach, executing logic linearly to handle input and output directly within a command-line interface. 
+
+In contrast, the **GUI_Calculator** demonstrates a transition toward higher-level system architecture by applying Object-Oriented Programming (OOP) principles. It strictly separates the core mathematical engine (`calc_backend.py`) from the visual interface (`calc_ui.py`). This "Separation of Concerns" not only delivers a modern graphical experience using `customtkinter`, but also ensures the underlying logic is modular, highly scalable, and completely independent of the frontend presentation.
 
 ## About the Program
 **STEPS**
@@ -64,10 +61,5 @@ Create a simple calculator using the following:
 3. Put the numbers that are to be calculated. Press enter and you will get the answer right away.
 
 4. Put whether you are going to calculate more or not. If there are none put 'n', or else put anything to continue computing.
-
-### Contact
-Zemerelin Iris M. Membrere - _zemerelinmembrere@gmail.com_
-
-**Output Link :** https://drive.google.com/file/d/1ryx_Rv1apFPQoEC80qHPVTOb30d6O0v4/view?usp=drive_link
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
